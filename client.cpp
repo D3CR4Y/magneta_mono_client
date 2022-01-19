@@ -10,7 +10,7 @@ string input;
 const int wall_height = 5;
 const int wall_width = 5;
 char input2;
-bool nick_zanyat;
+bool nick_exist;
 enum movers_of_magnets {LEFT, RIGHT};
 movers_of_magnets mov;
 int x = 0;
@@ -74,14 +74,13 @@ int main()
         return main();
     }
     else{
-        nick_zanyat = true;
+        nick_exist = true;
         
     }
 
 
     system("cls");
     cout << "Hello " + nick1 + "!" << endl;
-    cout << "And goodbye because i am entering Auth-account server)))))))))" << endl;
     cout << "Magneta mono" << endl;
     cout << "1. Start game" << endl;
     cout << "2. Exit" << endl;
