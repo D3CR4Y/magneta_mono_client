@@ -89,8 +89,8 @@ int main()
     if (input == "1")
     {
         draw();
-        //cons();
-        //move_func();
+        cons();
+        move_func();
 
     }
     if (input == "2")
