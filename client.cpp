@@ -10,7 +10,7 @@ string input;
 string magnitic_stanard = "===";
 const int wall_height = 5;
 const int wall_width = 5;
-char input2;
+char input_number_two;
 bool nick_exist;
 enum movers_of_magnets {LEFT, RIGHT};
 movers_of_magnets mov;
