@@ -7,6 +7,7 @@ using namespace std;
 
 string nick1;
 string input;
+string magnitic_stanard = "===";
 const int wall_height = 5;
 const int wall_width = 5;
 char input2;
