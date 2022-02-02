@@ -10,14 +10,19 @@ string input;
 string magnitic_stanard = "===";
 const int wall_height = 5;
 const int wall_width = 5;
+int x,y;
 char input_number_two;
 bool nick_exist;
 enum movers_of_magnets {LEFT, RIGHT};
 movers_of_magnets mov;
-int x = 0;
 
 
 
+void set()
+{
+    x = wall_width / 2;
+    y = wall_height / 2;
+}
 
 void draw()
 {
@@ -28,10 +33,12 @@ void draw()
         for (int dar = 0; dar < wall_width; dar++){
             if (dar == 0)
             cout << "-" << endl;
+            if (amg == y && dar == x){
+                cout << magnitic_stanard << endl;
+            }
         }
     }
     system("pause");
-
 }
 
 void cons()
@@ -89,6 +96,7 @@ int main()
 
     if (input == "1")
     {
+        set();
         draw();
         cons();
         move_func();
