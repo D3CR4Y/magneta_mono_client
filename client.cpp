@@ -3,11 +3,9 @@
 #include <conio.h>
 #include <windows.h>
 
-using namespace std;
-
-string nick1;
-string input;
-string magnitic_stanard = "===";
+std::string nick1;
+std::string input;
+std::string magnitic_stanard = "===";
 const int wall_height = 5;
 const int wall_width = 5;
 int x,y;
@@ -27,14 +25,14 @@ void set()
 void draw()
 {
     system("cls");
-    for (int amg = 0; amg < wall_width + 2; amg++)
-    cout << "-" << endl;
-    for (int amg = 0; amg < wall_height; amg++) {
-        for (int dar = 0; dar < wall_width; dar++){
-            if (dar == 0)
-            cout << "-" << endl;
-            if (amg == y && dar == x){
-                cout << magnitic_stanard << endl;
+    for (int part_wall = 0; part_wall < wall_width + 2; part_wall++)
+    std::cout << "-" << std::endl;
+    for (int part_wall = 0; part_wall < wall_height; part_wall++) {
+        for (int wall = 0; wall < wall_width; wall++){
+            if (wall == 0)
+            std::cout << "-" << std::endl;
+            if (part_wall == y && wall == x){
+                std::cout << magnitic_stanard << std::endl;
             }
         }
     }
@@ -72,12 +70,12 @@ void move_func()
 
 int main()
 {
-    cout << "Enter your nickname" << endl;
-    cin >> nick1;
+    std::cout << "Enter your nickname" << std::endl;
+    std::cin >> nick1;
     if (nick1 == "")
     {
         system("cls");
-        cout << "You entered empty nick!" << endl;
+        std::cout << "You entered empty nick!" << std::endl;
         system("pause");
         return main();
     }
@@ -88,11 +86,11 @@ int main()
 
 
     system("cls");
-    cout << "Hello " + nick1 + "!" << endl;
-    cout << "Magneta mono" << endl;
-    cout << "1. Start game" << endl;
-    cout << "2. Exit" << endl;
-    cin >> input;
+    std::cout << "Hello " + nick1 + "!" << std::endl;
+    std::cout << "Magneta mono" << std::endl;
+    std::cout << "1. Start game" << std::endl;
+    std::cout << "2. Exit" << std::endl;
+    std::cin >> input;
 
     if (input == "1")
     {
