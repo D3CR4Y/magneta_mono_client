@@ -1,3 +1,3 @@
 Game in prealpha testing
 
-MMC VER PA_0_0_5
+MaMo_C_VER_PA_0_0_6
